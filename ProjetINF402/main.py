@@ -201,6 +201,7 @@ if __name__ == "__main__":
 #CAS GÉNERAL, pas d'option (fait tout):
     solve_with_file(sys.argv[1])
     print("Création du fichier output.cnf\n")
+    resultat = subprocess.run(commande, shell=True, capture_output=True, text=True)
     #stocker la sortie de la commande
     sortie = resultat.stdout
     print("Resultat du sat solver :\n",sortie)
