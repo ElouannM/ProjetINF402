@@ -1,25 +1,24 @@
-compiler + resultat:
-python3 main.py grilletest/board1.txt
-
 Manuel:
 python3 main.py -h
 
-Que creer le fichier dimacs:
+-Uniquement creer le fichier dimacs:
 python3 main.py -f grilletest/board1.txt
 
-Que le resultat du sat solver:
+-Uniquement le resultat du sat solver:
 python3 main.py -s grilletest/board1.txt
 
-Transformation du resultat du sat solver
+-Transformation du resultat du sat solver:
 python3 main.py -t grilletest/board1.txt
 
-Pas d'option = tout
-Si appelle 
+-Pas d'option = tout :
+python3 main.py grilletest/board1.txt
 
 
-juste resultat du sat solver : 
+-Juste resultat du sat solver(le fichier DIMACS doit etre creer avant) : 
 cryptominisat5 --verb=0 output.cnf
 
 
 Requirements:
 https://pypi.org/project/pycryptosat/
+
+Les grille de test sont dans le rep grilletest/
